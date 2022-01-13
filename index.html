@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Parallax Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h2>Simple Parallax Effects for Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora fuga aliquid vel velit excepturi deleniti
+            nulla architecto. Vel molestias quisquam consectetur natus iusto, soluta veritatis. Fuga, eius? Porro nemo
+            deleniti maxime perferendis placeat. Iure consequatur possimus tempora sint eaque nesciunt quidem ex vel
+            officiis, illo mollitia voluptates corporis magnam sequi quae repudiandae! Necessitatibus minus blanditiis
+            sint enim quas nam accusantium eos nulla, incidunt consectetur iusto? Nesciunt iste dignissimos dolorum
+            reprehenderit enim, dicta esse accusamus sequi quidem! Debitis dicta quam consequuntur odit accusamus harum
+            fugiat blanditiis iusto dolorum possimus doloribus earum sed rerum, magni quidem? Temporibus eum labore
+            veritatis tempora assumenda.\</p>
+    </section>
+    <div class="parallaxbg">
+        <img src="img1.jpg" alt="" class="left">
+        <h2>Left</h2>
+    </div>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora fuga aliquid vel velit excepturi deleniti
+            nulla architecto. Vel molestias quisquam consectetur natus iusto, soluta veritatis. Fuga, eius? Porro nemo
+            deleniti maxime perferendis placeat. Iure consequatur possimus tempora sint eaque nesciunt quidem ex vel
+            officiis, illo mollitia voluptates corporis magnam sequi quae repudiandae! Necessitatibus minus blanditiis
+            sint enim quas nam accusantium eos nulla, incidunt consectetur iusto? Nesciunt iste dignissimos dolorum
+            reprehenderit enim, dicta esse accusamus sequi quidem! Debitis dicta quam consequuntur odit accusamus harum
+            fugiat blanditiis iusto dolorum possimus doloribus earum sed rerum, magni quidem? Temporibus eum labore
+            veritatis tempora assumenda.\</p>
+    </section>
+    <div class="parallaxbg">
+        <img src="img2.jpg" alt="" class="right">
+        <h2>Right</h2>
+    </div>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora fuga aliquid vel velit excepturi deleniti
+            nulla architecto. Vel molestias quisquam consectetur natus iusto, soluta veritatis. Fuga, eius? Porro nemo
+            deleniti maxime perferendis placeat. Iure consequatur possimus tempora sint eaque nesciunt quidem ex vel
+            officiis, illo mollitia voluptates corporis magnam sequi quae repudiandae! Necessitatibus minus blanditiis
+            sint enim quas nam accusantium eos nulla, incidunt consectetur iusto? Nesciunt iste dignissimos dolorum
+            reprehenderit enim, dicta esse accusamus sequi quidem! Debitis dicta quam consequuntur odit accusamus harum
+            fugiat blanditiis iusto dolorum possimus doloribus earum sed rerum, magni quidem? Temporibus eum labore
+            veritatis tempora assumenda.\</p>
+    </section>
+    <div class="parallaxbg">
+        <img src="img3.jpg" alt="" class="top">
+        <h2>Top</h2>
+    </div>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora fuga aliquid vel velit excepturi deleniti
+            nulla architecto. Vel molestias quisquam consectetur natus iusto, soluta veritatis. Fuga, eius? Porro nemo
+            deleniti maxime perferendis placeat. Iure consequatur possimus tempora sint eaque nesciunt quidem ex vel
+            officiis, illo mollitia voluptates corporis magnam sequi quae repudiandae! Necessitatibus minus blanditiis
+            sint enim quas nam accusantium eos nulla, incidunt consectetur iusto? Nesciunt iste dignissimos dolorum
+            reprehenderit enim, dicta esse accusamus sequi quidem! Debitis dicta quam consequuntur odit accusamus harum
+            fugiat blanditiis iusto dolorum possimus doloribus earum sed rerum, magni quidem? Temporibus eum labore
+            veritatis tempora assumenda.\</p>
+    </section>
+    <div class="parallaxbg">
+        <img src="img4.jpg" alt="" class="down">
+        <h2>Down</h2>
+    </div>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora fuga aliquid vel velit excepturi deleniti
+            nulla architecto. Vel molestias quisquam consectetur natus iusto, soluta veritatis. Fuga, eius? Porro nemo
+            deleniti maxime perferendis placeat. Iure consequatur possimus tempora sint eaque nesciunt quidem ex vel
+            officiis, illo mollitia voluptates corporis magnam sequi quae repudiandae! Necessitatibus minus blanditiis
+            sint enim quas nam accusantium eos nulla, incidunt consectetur iusto? Nesciunt iste dignissimos dolorum
+            reprehenderit enim, dicta esse accusamus sequi quidem! Debitis dicta quam consequuntur odit accusamus harum
+            fugiat blanditiis iusto dolorum possimus doloribus earum sed rerum, magni quidem? Temporibus eum labore
+            veritatis tempora assumenda.\</p>
+    </section>
+    <script src="simpleParallax.js"></script>
+    <script>
+        var image1 = document.getElementsByClassName('left');
+        var image2 = document.getElementsByClassName('right');
+        var image3 = document.getElementsByClassName('top');
+        var image4 = document.getElementsByClassName('down');
+        new simpleParallax(image1,{
+            orientation: 'left',
+        });
+        new simpleParallax(image2,{
+            orientation: 'right',
+        });
+        new simpleParallax(image3,{
+            orientation: 'up',
+        });
+        new simpleParallax(image4,{
+            orientation: 'down',
+        });
+        
+    </script>
+</body>
+
+</html>
